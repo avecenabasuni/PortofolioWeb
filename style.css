@@ -1,0 +1,157 @@
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: #ededed !important;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.nav-item {
+  color: EDEDED !important;
+  font-family: "Mukta", sans-serif;
+  font-weight: normal;
+}
+
+/* Me */
+#me {
+  background-image: url(/img/jumbotron/5.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  margin-right: -100px;
+  margin-top: -75px;
+  text-transform: uppercase;
+}
+
+#me h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
+}
+
+#me .job {
+  font-family: "Mukta", sans-serif;
+  font-size: 28px;
+}
+
+#me .tombol {
+  font-family: "Mukta", sans-serif;
+  font-size: 11px;
+}
+/* Akhir Me */
+
+/* About */
+#about {
+  padding: 50px;
+  background-color: #444444;
+  color: #ededed;
+}
+
+#about h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+}
+/* Akhir About */
+
+/* Project */
+#project {
+  padding: 50px;
+  background-color: #171717;
+}
+
+#project h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  color: #ededed;
+  margin-bottom: 30px;
+}
+/* Akhir Project */
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 50px;
+  background-color: #da0037;
+}
+
+#contact h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  color: #ededed;
+  margin-bottom: 30px;
+}
+
+#contact label {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  color: #ededed;
+}
+/* Akhir Contact */
+
+/* Footer */
+footer {
+  font-family: "Mukta", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #171717;
+  background-color: #ededed;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  font-size: 14px;
+  color: #171717;
+}
+/* Akhir Footer */
+
+/* Versi Desktop */
+@media (min-width: 922px) {
+  .navbar-brand,
+  .nav-link {
+    color: #ededed !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+  .nav-link:hover:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ededed;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
