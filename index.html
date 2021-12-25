@@ -41,13 +41,13 @@
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Avecena Basuni</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div data-bs-spy="scroll" data-bs-target="#home" data-bs-offset="0" class="scrollspy-example" tabindex="0" class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav ms-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -60,7 +60,7 @@
               <a class="nav-link active" aria-current="page" href="#project">My Projects</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-dark tombol rounded-pill" href="#contact">CONTACT ME</a>
+              <a class="nav-link active" aria-current="page" href="#contact">CONTACT ME</a>
             </li>
           </ul>
         </div>
@@ -75,7 +75,7 @@
             <h1 data-aos="fade-up" data-aos-duration="1250">Avecena Basuni</h1>
             <div class="identity">
               <p class="job" data-aos="fade-up" data-aos-duration="1250">Student of Electrical Engineering</p>
-              <a href="#project" class="btn btn-dark tombol rounded-pill" data-aos="fade-up" data-aos-duration="1250">Learn More</a>
+              <a href="doc/Curriculum Vitae.pdf" class="btn btn-dark tombol rounded-pill" data-aos="fade-up" data-aos-duration="1250">Curriculum Vitae</a>
             </div>
           </div>
         </div>
@@ -94,7 +94,8 @@
         <div class="row justify-content-center fs-5 text-center" data-aos="fade-up" data-aos-duration="1250">
           <div class="col-md-10">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et inventore deserunt ut, similique mollitia suscipit. Sapiente dolorum blanditiis nesciunt ut commodi sunt, magni officiis, accusantium cum nostrum alias vero sit!
+              I am a third year college student majoring Electrical Engineering in University of Indonesia. I'm interested in football, graphic design, programming, and anime. I'm always trying to be a better person everyday. I'm highly
+              interested to learn something everyday.
             </p>
           </div>
         </div>
@@ -187,6 +188,18 @@
     });
     AOS.init({
       once: true,
+    });
+  </script>
+
+  <script type="text/javascript">
+    var nav = document.querySelector("nav");
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("bg-dark", "shadow");
+      } else {
+        nav.classList.remove("bg-dark", "shadow");
+      }
     });
   </script>
 </html>
